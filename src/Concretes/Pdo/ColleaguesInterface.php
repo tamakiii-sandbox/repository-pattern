@@ -2,12 +2,12 @@
 
 namespace Concretehouse\Dp\Repository\Concretes\Pdo;
 
-use Concretehouse\Dp\Repository\Mediator;
+use Concretehouse\Dp\Repository\Mediator as Upper;
 
 /**
  * Colleagues interface for Pdo Mediator.
  */
-interface ColleaguesInterface extends Mediator\ColleaguesInterface
+interface ColleaguesInterface extends Upper\ColleaguesInterface
 {
     /**
      * @param Pdo $pdo
