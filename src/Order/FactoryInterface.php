@@ -1,6 +1,6 @@
 <?php
 
-namespace Concretehouse\DesignPattern\Repository\Order;
+namespace Concretehouse\Dp\Repository\Order;
 
 /**
  * Order factory interface.
