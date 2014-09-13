@@ -2,14 +2,14 @@
 
 namespace Concretehouse\Dp\Repository\Test\Unit\Concretes\Pdo;
 
-use Concretehouse\Dp\Repository\Concretes\Pdo\StateAbstract;
+use Concretehouse\Dp\Repository\Concretes\Pdo\States\ReadAbstract;
 
-class State extends StateAbstract {}
+class State extends ReadAbstract {}
 
 /**
- * Test for Pdo State for PDOStatement::fetchAll().
+ * Test for abstract class of read-states.
  */
-class FetchAllTest extends \PHPUnit_Framework_TestCase
+class ReadAbstractTest extends \PHPUnit_Framework_TestCase
 {
     /**
      * Set up

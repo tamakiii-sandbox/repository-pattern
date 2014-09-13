@@ -1,11 +1,11 @@
 <?php
 
-namespace Concretehouse\Dp\Repository\Concretes\Pdo;
+namespace Concretehouse\Dp\Repository\Concretes\Pdo\States;
 
 /**
- * Abstract class of States for Pdo.
+ * Abstract class of read-states for Pdo.
  */
-abstract class StateAbstract implements StateInterface
+abstract class ReadAbstract implements ReadInterface
 {
     /**
      * @var string

@@ -30,7 +30,7 @@ class FetchColumnTest extends \PHPUnit_Framework_TestCase
      */
     public function extendedAbstract()
     {
-        $this->assertInstanceOf('Concretehouse\Dp\Repository\Concretes\Pdo\StateAbstract', $this->state);
+        $this->assertInstanceOf('Concretehouse\Dp\Repository\Concretes\Pdo\States\ReadAbstract', $this->state);
     }
 
     /**

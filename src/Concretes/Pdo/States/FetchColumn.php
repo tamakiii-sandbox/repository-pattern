@@ -2,13 +2,11 @@
 
 namespace Concretehouse\Dp\Repository\Concretes\Pdo\States;
 
-use Concretehouse\Dp\Repository\Concretes\Pdo\StateAbstract;
-
 /**
  * Pdo mediating state for Statement::fetchColumn().
  * @link http://php.net/manual/ja/pdostatement.fetchcolumn.php
  */
-class FetchColumn extends StateAbstract
+class FetchColumn extends ReadAbstract
 {
     /**
      * @var int
