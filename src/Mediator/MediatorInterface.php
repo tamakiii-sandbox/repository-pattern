@@ -2,16 +2,16 @@
 
 namespace Concretehouse\Dp\Repository\Mediator;
 
-use Concretehouse\Dp\Repository\Order\OrderInterface;
+use Concretehouse\Dp\Repository\State\StateInterface;
 
 /**
- * Order mediator interface.
+ * State mediator interface.
  */
 interface MediatorInterface
 {
     /**
-     * @param OrderInterface $order
+     * @param StateInterface $State
      * @param MediatableInterface $object
      */
-    public function mediate(OrderInterface $order, MediatableInterface $object);
+    public function mediate(StateInterface $State, MediatableInterface $object);
 }

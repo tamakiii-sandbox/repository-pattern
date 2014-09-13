@@ -1,11 +1,11 @@
 <?php
 
-namespace Concretehouse\Dp\Repository\Test\Unit\Order;
+namespace Concretehouse\Dp\Repository\Test\Unit\State;
 
 use Phake;
 
 /**
- * Test for order factory interface.
+ * Test for state factory interface.
  */
 class FactoryInterfaceTest extends \PHPUnit_Framework_TestCase
 {
@@ -14,6 +14,6 @@ class FactoryInterfaceTest extends \PHPUnit_Framework_TestCase
      */
     public function canImplement()
     {
-        Phake::mock('Concretehouse\Dp\Repository\Order\FactoryInterface');
+        Phake::mock('Concretehouse\Dp\Repository\State\FactoryInterface');
     }
 }

@@ -1,15 +1,15 @@
 <?php
 
-namespace Concretehouse\Dp\Repository\Order;
+namespace Concretehouse\Dp\Repository\State;
 
 /**
- * Order factory interface.
+ * State factory interface.
  */
 interface FactoryInterface
 {
     /**
      * @param string $name
-     * @return OrderInterface
+     * @return StateInterface
      */
     public function create($name);
 
