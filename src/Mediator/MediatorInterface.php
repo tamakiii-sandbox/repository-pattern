@@ -10,8 +10,7 @@ use Concretehouse\Dp\Repository\State\StateInterface;
 interface MediatorInterface
 {
     /**
-     * @param StateInterface $State
-     * @param MediatableInterface $object
+     * @param ColleaguesInterface
      */
-    public function mediate(StateInterface $State, MediatableInterface $object);
+    public function mediate(ColleaguesInterface $colleagues);
 }
