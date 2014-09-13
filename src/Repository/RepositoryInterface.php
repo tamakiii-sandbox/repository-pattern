@@ -3,7 +3,7 @@
 namespace Concretehouse\Dp\Repository\Repository;
 
 use Concretehouse\Dp\Repository\Model;
-use Concretehouse\Dp\Repository\Order;
+use Concretehouse\Dp\Repository\State;
 
 /**
  * Repository interface.
@@ -34,38 +34,38 @@ interface RepositoryInterface
     public function create(Model\ModelInterface $model);
 
     /**
-     * @param Order\OrderInterface
+     * @param State\StateInterface
      * @return Model\ModelInterface
      */
-    public function read(Order\OrderInterface $order);
+    public function read(State\StateInterface $State);
 
     /**
-     * @params Order\OrderInterface
+     * @params State\StateInterface
      * @return Arrays\ArrayInterface
      */
-    public function reads(Order\OrderInterface $order);
+    public function reads(State\StateInterface $State);
 
     /**
-     * @param Order\OrderInterface
+     * @param State\StateInterface
      * @return ResultInterface
      */
-    public function update(Order\OrderInterface $order);
+    public function update(State\StateInterface $State);
 
     /**
-     * @param Order\OrderInterface
+     * @param State\StateInterface
      * @return ResultInterface
      */
-    public function updates(Order\OrderInterface $order);
+    public function updates(State\StateInterface $State);
 
     /**
-     * @param Order\OrderInterface
+     * @param State\StateInterface
      * @return ResultInterface
      */
-    public function delete(Order\OrderInterface $order);
+    public function delete(State\StateInterface $State);
 
     /**
-     * @param Order\OrderInterface
+     * @param State\StateInterface
      * @return ResultInterface
      */
-    public function deletes(Order\OrderInterface $order);
+    public function deletes(State\StateInterface $State);
 }
