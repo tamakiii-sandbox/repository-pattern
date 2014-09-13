@@ -37,35 +37,35 @@ interface RepositoryInterface
      * @param State\StateInterface
      * @return Model\ModelInterface
      */
-    public function read(State\StateInterface $State);
+    public function read(State\StateInterface $state);
 
     /**
      * @params State\StateInterface
      * @return Arrays\ArrayInterface
      */
-    public function reads(State\StateInterface $State);
+    public function reads(State\StateInterface $state);
 
     /**
      * @param State\StateInterface
      * @return ResultInterface
      */
-    public function update(State\StateInterface $State);
+    public function update(State\StateInterface $state);
 
     /**
      * @param State\StateInterface
      * @return ResultInterface
      */
-    public function updates(State\StateInterface $State);
+    public function updates(State\StateInterface $state);
 
     /**
      * @param State\StateInterface
      * @return ResultInterface
      */
-    public function delete(State\StateInterface $State);
+    public function delete(State\StateInterface $state);
 
     /**
      * @param State\StateInterface
      * @return ResultInterface
      */
-    public function deletes(State\StateInterface $State);
+    public function deletes(State\StateInterface $state);
 }
