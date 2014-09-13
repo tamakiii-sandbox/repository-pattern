@@ -38,7 +38,7 @@ class FetchAll extends StateAbstract
         array $values = array(),
         $style = \PDO::FETCH_BOTH,
         $args = null,
-        $cArgs = array()
+        array $cArgs = array()
     ) {
         parent::__construct($query, $values);
 
