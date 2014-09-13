@@ -17,6 +17,11 @@ abstract class StateAbstract implements StateInterface
      */
     private $values = array();
 
+    /**
+     * @var array
+     */
+    private $options = array();
+
 
     /**
      * @param string $query
@@ -99,5 +104,21 @@ abstract class StateAbstract implements StateInterface
     public function getFetchStyle()
     {
         return $this->fetchStyle;
+    }
+
+    /**
+     * @param array $options
+     */
+    public function setOptions($options)
+    {
+        $this->options = $options;
+    }
+
+    /**
+     * @return int
+     */
+    public function getOptions()
+    {
+        return $this->options;
     }
 }

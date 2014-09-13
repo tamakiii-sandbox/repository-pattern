@@ -95,4 +95,13 @@ class FetchAllTest extends \PHPUnit_Framework_TestCase
             $this->state->getValues()
         );
     }
+
+    /**
+     * @test
+     */
+    public function canSetDriverOptionsWithSetter()
+    {
+        $this->state->setOptions(array(150, 'red'));
+        $this->assertSame(array(150, 'red'), $this->state->getOptions());
+    }
 }
