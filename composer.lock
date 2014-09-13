@@ -4,9 +4,51 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "6317567e2850f4c6938874098b72fe8d",
+    "hash": "866c6366f22c990eb0f8b8ba22d4256d",
     "packages": [
-
+        {
+            "name": "concretehouse/factory-pattern",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/tamakiii/factory-pattern.git",
+                "reference": "eebd37bef1e89d891605c2a4e3543272e5bbf759"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/tamakiii/factory-pattern/zipball/eebd37bef1e89d891605c2a4e3543272e5bbf759",
+                "reference": "eebd37bef1e89d891605c2a4e3543272e5bbf759",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.2"
+            },
+            "require-dev": {
+                "phake/phake": "dev-master",
+                "phpunit/phpunit": "4.2.*"
+            },
+            "bin": [
+                "bin/phpunit"
+            ],
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Concretehouse\\Dp\\Factory\\": "src"
+                }
+            },
+            "authors": [
+                {
+                    "name": "tamakiii",
+                    "email": "tamaki.htm@gmail.com"
+                }
+            ],
+            "description": "Experimental implementation of Factory design pattern.",
+            "support": {
+                "source": "https://github.com/tamakiii/factory-pattern/tree/master",
+                "issues": "https://github.com/tamakiii/factory-pattern/issues"
+            },
+            "time": "2014-09-13 23:05:15"
+        }
     ],
     "packages-dev": [
         {
@@ -550,12 +592,13 @@
     ],
     "minimum-stability": "dev",
     "stability-flags": {
+        "concretehouse/factory-pattern": 20,
         "phake/phake": 20
     },
     "prefer-stable": false,
-    "platform": [
-
-    ],
+    "platform": {
+        "php": ">=5.3.2"
+    },
     "platform-dev": [
 
     ]
