@@ -19,8 +19,8 @@ class Colleagues implements ColleaguesInterface
 
 
     /**
-     * @param Pdo $pdo
-     * @param State $state
+     * @param PdoInterface $pdo
+     * @param StateInterface $state
      */
     public function __construct(PdoInterface $pdo, StateInterface $state)
     {

@@ -2,13 +2,13 @@
 
 namespace Concretehouse\Dp\Repository\Concretes\Pdo;
 
-use Concretehouse\Dp\Repository\Mediator as Upper;
 use Concretehouse\Dp\Factory\FactoryInterface;
+use Concretehouse\Dp\Repository;
 
 /**
  * Pdo mediator.
  */
-class Mediator implements Upper\MediatorInterface
+class Mediator implements Repository\Mediator\MediatorInterface
 {
     /**
      * @var FactoryInterface
@@ -25,10 +25,10 @@ class Mediator implements Upper\MediatorInterface
     }
 
     /**
-     * @param Upper\ColleaguesInterface $colleagues
+     * @param Repository\Mediator\ColleaguesInterface $colleagues
      * @return mixed
      */
-    public function mediate(Upper\ColleaguesInterface $colleagues)
+    public function mediate(Repository\Mediator\ColleaguesInterface $colleagues)
     {
         $state = $colleagues->getState();
         $mediator = $this->getMediator($state);
@@ -56,7 +56,7 @@ class Mediator implements Upper\MediatorInterface
     {
         $mediator = $this->factory->create($name);
 
-        if (!$mediator instanceof Upper\MediatorInterface) {
+        if (!$mediator instanceof Repository\Mediator\MediatorInterface) {
             $class = get_class($mediator);
             throw new \UnexpectedValueException("Mediator must implement MediatorInterface({$class}).");
         }
