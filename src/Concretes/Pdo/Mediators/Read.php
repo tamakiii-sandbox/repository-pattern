@@ -2,20 +2,20 @@
 
 namespace Concretehouse\Dp\Repository\Concretes\Pdo\Mediators;
 
-use Concretehouse\Dp\Repository\Mediator as Pear;
+use Concretehouse\Dp\Repository;
 use Concretehouse\Dp\Repository\Concretes\Pdo\States;
 use Concretehouse\Dp\Repository\Concretes\Pdo\Colleagues;
 
 /**
  * Pdo read mediator.
  */
-class Read implements Pear\MediatorInterface
+class Read implements Repository\Mediator\MediatorInterface
 {
     /**
      * @param Colleagues $colleagues
      * @return mixed
      */
-    public function mediate(Pear\ColleaguesInterface $colleagues)
+    public function mediate(Repository\Mediator\ColleaguesInterface $colleagues)
     {
         if (!$colleagues instanceof Colleagues) {
             throw new \InvalidArgumentException('$colleagues must be instance of Pdo Colleagues.');
