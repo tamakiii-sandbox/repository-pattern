@@ -7,4 +7,13 @@ namespace Concretehouse\Dp\Repository\Mediator;
  */
 interface ColleaguesInterface
 {
+    /**
+     * @return PdoInterface
+     */
+    public function getPdo();
+
+    /**
+     * @return StateInteface
+     */
+    public function getState();
 }
