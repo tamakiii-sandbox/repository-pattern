@@ -31,38 +31,38 @@ interface RepositoryInterface
     public function create(ModelInterface $model);
 
     /**
-     * @param State\StateInterface
+     * @param StateInterface
      * @return ModelInterface
      */
-    public function read(State\StateInterface $state);
+    public function read(StateInterface $state);
 
     /**
-     * @params State\StateInterface
+     * @params StateInterface
      * @return Arrays\ArrayInterface
      */
-    public function reads(State\StateInterface $state);
+    public function reads(StateInterface $state);
 
     /**
-     * @param State\StateInterface
+     * @param StateInterface
      * @return ResultInterface
      */
-    public function update(State\StateInterface $state);
+    public function update(StateInterface $state);
 
     /**
-     * @param State\StateInterface
+     * @param StateInterface
      * @return ResultInterface
      */
-    public function updates(State\StateInterface $state);
+    public function updates(StateInterface $state);
 
     /**
-     * @param State\StateInterface
+     * @param StateInterface
      * @return ResultInterface
      */
-    public function delete(State\StateInterface $state);
+    public function delete(StateInterface $state);
 
     /**
-     * @param State\StateInterface
+     * @param StateInterface
      * @return ResultInterface
      */
-    public function deletes(State\StateInterface $state);
+    public function deletes(StateInterface $state);
 }
