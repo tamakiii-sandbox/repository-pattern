@@ -1,11 +1,11 @@
 <?php
 
-namespace Concretehouse\Dp\Repository\State;
+namespace Concretehouse\Dp\Repository;
 
 /**
  * State factory interface.
  */
-interface FactoryInterface
+interface StateFactoryInterface
 {
     /**
      * @param string $name

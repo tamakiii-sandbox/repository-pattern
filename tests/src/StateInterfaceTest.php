@@ -1,6 +1,6 @@
 <?php
 
-namespace Concretehouse\Dp\Repository\Test\State;
+namespace Concretehouse\Dp\Repository\Test;
 
 use Phake;
 
@@ -14,6 +14,6 @@ class StateInterfaceTest extends \PHPUnit_Framework_TestCase
      */
     public function canImplement()
     {
-        Phake::mock('Concretehouse\Dp\Repository\State\StateInterface');
+        Phake::mock('Concretehouse\Dp\Repository\StateInterface');
     }
 }

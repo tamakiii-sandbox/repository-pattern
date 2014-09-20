@@ -1,6 +1,6 @@
 <?php
 
-namespace Concretehouse\Dp\Repository\Model;
+namespace Concretehouse\Dp\Repository;
 
 /**
  * Model interface.

@@ -1,6 +1,6 @@
 <?php
 
-namespace Concretehouse\Dp\Repository\Test\Model;
+namespace Concretehouse\Dp\Repository\Test;
 
 use Phake;
 
@@ -14,6 +14,6 @@ class ModelInterfaceTest extends \PHPUnit_Framework_TestCase
      */
     public function canImplement()
     {
-        Phake::mock('Concretehouse\Dp\Repository\Model\ModelInterface');
+        Phake::mock('Concretehouse\Dp\Repository\ModelInterface');
     }
 }
