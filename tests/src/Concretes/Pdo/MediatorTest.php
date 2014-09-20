@@ -37,6 +37,8 @@ class MediatorTest extends \PHPUnit_Framework_TestCase
      */
     public function mediatesWithReadMediatorIfReadStateWasSpecified()
     {
+        $this->markTestIncomplete('These will be moved to "component-repository" and re-implemented ASAP');
+
         // Prepare params
         $state = $this->getState('read');
         $mediator = $this->getMediator('read');

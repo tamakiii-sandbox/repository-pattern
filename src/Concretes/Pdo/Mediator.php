@@ -54,7 +54,7 @@ class Mediator implements Repository\Mediator\MediatorInterface
      */
     private function create($name)
     {
-        $mediator = $this->factory->create($name);
+        $mediator = $this->factory->make($name);
 
         if (!$mediator instanceof Repository\Mediator\MediatorInterface) {
             $class = get_class($mediator);
