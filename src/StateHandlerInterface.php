@@ -1,6 +1,6 @@
 <?php
 
-namespace Concretehouse\Dp\Repository\State;
+namespace Concretehouse\Dp\Repository;
 
 /**
  * State handler interface.

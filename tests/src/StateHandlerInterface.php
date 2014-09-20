@@ -1,6 +1,6 @@
 <?php
 
-namespace Concretehouse\Dp\Repository\Test\State;
+namespace Concretehouse\Dp\Repository\Test;
 
 use Phake;
 
@@ -14,6 +14,6 @@ class StateHandlerInterfaceTest extends \PHPUnit_Framework_TestCase
      */
     public function canUse()
     {
-        Phake::mock('Concretehouse\Dp\Repository\State\StateHandlerInterface');
+        Phake::mock('Concretehouse\Dp\Repository\StateHandlerInterface');
     }
 }
