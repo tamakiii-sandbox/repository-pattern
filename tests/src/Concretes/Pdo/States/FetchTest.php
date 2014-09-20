@@ -1,20 +1,20 @@
 <?php
 
-namespace Concretehouse\Dp\Repository\Test\Unit\Concretes\Pdo\States;
+namespace Concretehouse\Dp\Repository\Test\Concretes\Pdo\States;
 
-use Concretehouse\Dp\Repository\Concretes\Pdo\States\FetchAll;
+use Concretehouse\Dp\Repository\Concretes\Pdo\States\Fetch;
 
 /**
- * Test for Pdo State for PDOStatement::fetchAll().
+ * Test for Pdo State for PDOStatement::fetch().
  */
-class FetchAllTest extends \PHPUnit_Framework_TestCase
+class FetchTest extends \PHPUnit_Framework_TestCase
 {
     /**
      * Set up
      */
     public function setUp()
     {
-        $this->state = new FetchAll(
+        $this->state = new Fetch(
             'SELECT * FROM test WHERE id = :id',
             array(
                 ':id' => array(1, \PDO::PARAM_INT),
@@ -22,8 +22,8 @@ class FetchAllTest extends \PHPUnit_Framework_TestCase
                 ':last_name' => 'Shinzou',
             ),
             \PDO::FETCH_CLASS,
-            'stdClass',
-            array('hoge')
+            \PDO::FETCH_ORI_ABS,
+            10
         );
     }
 
@@ -46,17 +46,17 @@ class FetchAllTest extends \PHPUnit_Framework_TestCase
     /**
      * @test
      */
-    public function canSetFetchArgumentWithConstructor()
+    public function canSetCursorOrientationWithConstructor()
     {
-        $this->assertSame('stdClass', $this->state->getArgs());
+        $this->assertSame(\PDO::FETCH_ORI_ABS, $this->state->getOrientation());
     }
 
     /**
      * @test
      */
-    public function canSetCtorArgsWithConstructor()
+    public function canSetCursorOffsetWithConstructor()
     {
-        $this->assertSame(array('hoge'), $this->state->getCArgs());
+        $this->assertSame(10, $this->state->getOffset());
     }
 
     /**
@@ -71,18 +71,18 @@ class FetchAllTest extends \PHPUnit_Framework_TestCase
     /**
      * @test
      */
-    public function canSetFetchArgumentWithSetter()
+    public function canSetCursorOrientationWithSetter()
     {
-        $this->state->setArgs(null);
-        $this->assertSame(null, $this->state->getArgs());
+        $this->state->setOrientation(\PDO::FETCH_ORI_REL);
+        $this->assertSame(\PDO::FETCH_ORI_REL, $this->state->getOrientation());
     }
 
     /**
      * @test
      */
-    public function canSetCtorArgsWithSetter()
+    public function canSetCursorOffsetWithSetter()
     {
-        $this->state->setCArgs(array());
-        $this->assertSame(array(), $this->state->getCArgs());
+        $this->state->setOffset(100);
+        $this->assertSame(100, $this->state->getOffset());
     }
 }

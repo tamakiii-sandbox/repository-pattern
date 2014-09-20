@@ -1,6 +1,6 @@
 <?php
 
-namespace Concretehouse\Dp\Repository\Test\Unit\Concretes\Pdo\Mediators;
+namespace Concretehouse\Dp\Repository\Test\Concretes\Pdo\Mediators;
 
 use Concretehouse\Dp\Repository\Concretes\Pdo\Mediators\Read;
 use Concretehouse\Dp\Repository\Concretes\Pdo\Colleagues;

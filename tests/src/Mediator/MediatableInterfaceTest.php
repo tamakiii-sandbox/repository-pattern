@@ -1,6 +1,6 @@
 <?php
 
-namespace Concretehouse\Dp\Repository\Test\Unit\Mediator;
+namespace Concretehouse\Dp\Repository\Test\Mediator;
 
 use Phake;
 

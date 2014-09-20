@@ -1,6 +1,6 @@
 <?php
 
-namespace Concretehouse\Dp\Repository\Test\Unit\Concretes\Pdo;
+namespace Concretehouse\Dp\Repository\Test\Concretes\Pdo;
 
 use Concretehouse\Dp\Repository\Concretes\Pdo\Mediator;
 use Phake;
@@ -37,6 +37,8 @@ class MediatorTest extends \PHPUnit_Framework_TestCase
      */
     public function mediatesWithReadMediatorIfReadStateWasSpecified()
     {
+        $this->markTestIncomplete('These will be moved to "component-repository" and re-implemented ASAP');
+
         // Prepare params
         $state = $this->getState('read');
         $mediator = $this->getMediator('read');

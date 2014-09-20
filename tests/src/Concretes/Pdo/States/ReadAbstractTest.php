@@ -1,6 +1,6 @@
 <?php
 
-namespace Concretehouse\Dp\Repository\Test\Unit\Concretes\Pdo;
+namespace Concretehouse\Dp\Repository\Test\Concretes\Pdo;
 
 use Concretehouse\Dp\Repository\Concretes\Pdo\States\ReadAbstract;
 
