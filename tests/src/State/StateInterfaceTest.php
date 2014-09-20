@@ -1,6 +1,6 @@
 <?php
 
-namespace Concretehouse\Dp\Repository\Test\Unit\State;
+namespace Concretehouse\Dp\Repository\Test\State;
 
 use Phake;
 

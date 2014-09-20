@@ -1,6 +1,6 @@
 <?php
 
-namespace Concretehouse\Dp\Repository\Test\Unit\Concrete\Pdo\States;
+namespace Concretehouse\Dp\Repository\Test\Concrete\Pdo\States;
 
 use Phake;
 

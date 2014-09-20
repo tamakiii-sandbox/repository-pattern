@@ -1,6 +1,6 @@
 <?php
 
-namespace Concretehouse\Dp\Repository\Test\Unit\Repository;
+namespace Concretehouse\Dp\Repository\Test\Repository;
 
 use Phake;
 

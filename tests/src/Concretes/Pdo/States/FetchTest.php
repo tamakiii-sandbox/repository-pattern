@@ -1,6 +1,6 @@
 <?php
 
-namespace Concretehouse\Dp\Repository\Test\Unit\Concretes\Pdo\States;
+namespace Concretehouse\Dp\Repository\Test\Concretes\Pdo\States;
 
 use Concretehouse\Dp\Repository\Concretes\Pdo\States\Fetch;
 
