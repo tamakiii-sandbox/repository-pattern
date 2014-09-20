@@ -18,7 +18,7 @@
         "concretehouse/factory-pattern": "dev-master"
     },
     "require-dev": {
-        "phpunit/phpunit": "3.7.*",
+        "phpunit/phpunit": "4.2.*",
         "phpunit/dbunit": "1.2.*",
         "Phake/phake": "dev-master"
     },
