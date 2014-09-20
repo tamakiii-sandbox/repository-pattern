@@ -1,11 +1,11 @@
 <?php
 
-namespace Concretehouse\Dp\Repository\Mediator;
+namespace Concretehouse\Dp\Repository;
 
 /**
  * Mediator colleagues interface.
  */
-interface ColleaguesInterface
+interface MediatorColleaguesInterface
 {
     /**
      * @return PdoInterface

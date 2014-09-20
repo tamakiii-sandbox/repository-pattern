@@ -1,6 +1,6 @@
 <?php
 
-namespace Concretehouse\Dp\Repository\Test\Mediator;
+namespace Concretehouse\Dp\Repository\Test;
 
 use Phake;
 
@@ -14,6 +14,6 @@ class MediatableInterfaceTest extends \PHPUnit_Framework_TestCase
      */
     public function canImplement()
     {
-        Phake::mock('Concretehouse\Dp\Repository\Mediator\MediatableInterface');
+        Phake::mock('Concretehouse\Dp\Repository\MediatableInterface');
     }
 }
