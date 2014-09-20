@@ -1,9 +1,6 @@
 <?php
 
-namespace Concretehouse\Dp\Repository\Repository;
-
-use Concretehouse\Dp\Repository\Model;
-use Concretehouse\Dp\Repository\State;
+namespace Concretehouse\Dp\Repository;
 
 /**
  * Repository interface.
@@ -17,7 +14,7 @@ interface RepositoryInterface
 
     /**
      * @param array $row
-     * @return Model\ModelInterface
+     * @return ModelInterface
      */
     public function instantiate(array $row);
 
@@ -28,14 +25,14 @@ interface RepositoryInterface
     public function instantiates(array $rows);
 
     /**
-     * @param Model\ModelInterface
-     * @return Model\ModelInterface
+     * @param ModelInterface
+     * @return ModelInterface
      */
-    public function create(Model\ModelInterface $model);
+    public function create(ModelInterface $model);
 
     /**
      * @param State\StateInterface
-     * @return Model\ModelInterface
+     * @return ModelInterface
      */
     public function read(State\StateInterface $state);
 
