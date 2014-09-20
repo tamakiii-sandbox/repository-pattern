@@ -22,11 +22,6 @@
         "phpunit/dbunit": "1.2.*",
         "Phake/phake": "dev-master"
     },
-    "bin": [
-        "bin/dbunit",
-        "bin/phpunit",
-        "bin/phpunit-skeleton"
-    ],
     "config": {
         "vendor-dir": "vendor"
     }

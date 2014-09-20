@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "3e42900ebb1ac8b25e2125c2c8af8aed",
+    "hash": "578a8b35bebcb61e2cab7d5e391a3e77",
     "packages": [
         {
             "name": "concretehouse/factory-pattern",
